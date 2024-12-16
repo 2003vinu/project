@@ -23,7 +23,7 @@ def audio_to_text(audio_path):
 
 def get_rating(text):
     text = text['text']
-    #model_path = expanduser("llama-2-13b-chat.Q8_0.gguf")
+    model_path = expanduser("your-model-path-here")
 
     template_messages = [
         SystemMessage(content="""Imagine You are an AI model who is able to provide ratings and review of tutorials and online course videos after analysing the content that are given as an input,
@@ -58,7 +58,7 @@ def video_to_text(video_path):
     video_to_audio(video_path, audio_path)
     text = audio_to_text(audio_path)
     print(f"Transcribed Text: {text['text']}")
-    #rating = get_rating(text)
+    rating = get_rating(text)
     return text
 
 if __name__ == "__main__":
