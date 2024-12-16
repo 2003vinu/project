@@ -13,7 +13,7 @@ from langchain_core.prompts.chat import (
 from langchain_community.llms import LlamaCpp
 
 def get_summary(text):
-    model_path = expanduser("llama-2-13b-chat.Q8_0.gguf")
+    model_path = expanduser("your-model-path-here")
 
     template_messages = [
         SystemMessage(content="""Imagine yourself as reviewer who can analyze a set of reviews of a video, and 
