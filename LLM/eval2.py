@@ -33,7 +33,7 @@ def get_user_parameters():
 
 def get_road_map(parameters):
 
-    model_path = expanduser("llama-2-13b-chat.Q8_0.gguf")
+    model_path = expanduser("your-model-path-here")
 
     template_messages = [
         SystemMessage(content="""Imagine you are an analyzer who can be able to provide a precise roadmap for a person who is going to learn a particular skill
